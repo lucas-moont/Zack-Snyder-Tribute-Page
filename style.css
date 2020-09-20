@@ -18,22 +18,29 @@ header {
 
 .container {
     display: flex;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
 
 header .logo, header .menu {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #c5c9cb;
 }
 
-.logo div {
-    border: 3px solid #2b2b2b;
+.logo a {
+    border: 3px solid #c5c9cb;
     font-size: 30px;
     padding: 8px;
     border-radius: 50%;
+    color: #c5c9cb;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    border: 3px solid #FFD700;
 }
 
 header .container {
@@ -54,6 +61,11 @@ ul a {
     text-decoration: none;
     color: #c5c9cb;
     padding: 12px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
 }
 
 #biography {
@@ -78,11 +90,6 @@ ul a {
 #biography .container h1 {
     font-size: 35px;
     margin-bottom: 3px;
-}
-
-#biography .container h1 {
-    font-size: 35px;
-    margin-bottom: 3px;
     color: #5e5e5e;
 }
 
@@ -98,4 +105,44 @@ ul a {
 
 #biography .container div a {
     color: #5e5e5e;
+}
+
+#filmography .container {
+    display: inline;
+}
+
+#filmography h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    padding-bottom: 2px;
+    padding-left: 0;
+    max-width: 100%;
+    border-bottom: 2px solid grey;
+    color: #5e5e5e;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+#filmography img {
+    height: 200px;
+    margin-right: 15px;
+}
+
+#filmography .movie {
+    margin-left: 15px;
+    display: flex;
+    font-size: 12px;
+    text-align: justify;
+    color: #616161;
+    font-family: 'Open Sans';
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#filmography .movie h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #A6A6A6;
 }
