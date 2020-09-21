@@ -45,6 +45,7 @@ header .logo, header .menu {
 
 header .container {
     justify-content: space-between;
+    padding: 15px;
 }
 
 ul {
@@ -72,7 +73,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #biography .container div {
@@ -105,6 +106,10 @@ section {
 
 #biography .container div a {
     color: #5e5e5e;
+}
+
+#filmography {
+    margin-top: 30px;
 }
 
 #filmography .container {
