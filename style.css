@@ -71,7 +71,6 @@ nav ul, nav li {
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 header nav ul a:hover{
@@ -137,7 +136,7 @@ section {
     display: inline;
 }
 
-#filmography h1 {
+#filmography h1, #gallery h1{
     font-family: 'Julius Sans One', sans-serif;
     padding-bottom: 2px;
     padding-left: 0;
@@ -173,6 +172,37 @@ section {
     color: #A6A6A6;
 }
 
+#gallery .container {
+    display: block;
+}
+
+.container .gallery_holder {
+    display: flex;
+    padding: 15px;
+    padding-right: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blank_square {
+    padding: 15px;
+    background-color: #d9d9d9;
+    height: 175px;
+    width: 190px;
+    text-align: center;
+    font-size: 12px;
+    color:#757575;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.blank_square img {
+    height: 90px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
 @media (max-width: 584px){
 
     header .logo, header .menu a{
@@ -186,7 +216,7 @@ section {
     }
 
     header nav ul{
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-top: 40px;
         padding-top: 20px;
@@ -240,7 +270,7 @@ section {
         margin-right: 15px;
     }
 
-    #filmography h1 {
+    #filmography h1, #gallery h1 {
         margin-right: 15px;
     }
 }
