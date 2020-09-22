@@ -28,6 +28,7 @@ header .logo, header .menu {
     font-size: 16px;
     font-weight: bold;
     color: #c5c9cb;
+    height: 100%;
 }
 
 .menuMobile {
@@ -50,6 +51,7 @@ header .logo, header .menu {
     border-radius: 50%;
     color: #c5c9cb;
     text-decoration: none;
+    height: 100%;
 }
 
 .logo a:hover{
@@ -69,6 +71,12 @@ nav ul, nav li {
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+header nav ul a:hover{
+    background-color: #e6e6e6;
+    color: #616161;
 }
 
 ul a {
@@ -194,11 +202,6 @@ section {
 
     header nav ul a{
         display: block;
-    }
-
-    header nav ul a:hover{
-        background-color: #e6e6e6;
-        color: #616161;
     }
 
     #biography .container {
