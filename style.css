@@ -30,6 +30,19 @@ header .logo, header .menu {
     color: #c5c9cb;
 }
 
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin: 40px 0px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 2px;
+    background-color: #c5c9cb;
+}
+
 .logo a {
     border: 3px solid #c5c9cb;
     font-size: 30px;
@@ -158,6 +171,35 @@ section {
         font-size: 14px;
     }
     
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-top: 20px;
+        background-color: #313131;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    header nav ul li{
+        margin-bottom: 10px;
+    }
+
+    header nav ul a{
+        display: block;
+    }
+
+    header nav ul a:hover{
+        background-color: #e6e6e6;
+        color: #616161;
+    }
 
     #biography .container {
         flex-direction: column;
@@ -169,7 +211,8 @@ section {
     }
 
     #biography .container img{
-        height: 470px;
+        width: 80%;
+        height: auto;
         justify-self: center;
     }
 
