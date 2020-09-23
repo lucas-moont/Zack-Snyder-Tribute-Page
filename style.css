@@ -174,14 +174,16 @@ section {
 
 #gallery .container {
     display: block;
+    margin-right: 15px;
 }
 
 .container .gallery_holder {
     display: flex;
-    padding: 15px;
-    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .blank_square {
@@ -194,13 +196,39 @@ section {
     color:#757575;
     margin-bottom: 15px;
     margin-right: 5px;
-    margin-left: 5px;
 }
 
 .blank_square img {
     height: 90px;
     width: auto;
     margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #303030;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    color: 	#9c9c9c;
+    padding: 15px;
+    font-family: 'Arial';
+    font-size: 9px;
+}
+
+footer .container a{
+    margin-left: 3px;    
+}
+
+footer .container img {
+    height: 20px;
+    width: auto;
 }
 
 @media (max-width: 584px){
