@@ -8,11 +8,10 @@ window.onload = function(){
     })
 }
 
-/*
 jQuery(document).ready(function($){
-    if($(window).width() < 768){
+    if($(window).width() < 584){
         $('.button').on('click', function() {
             $(".menuMobile").trigger('click');
         });
     }
-});*/
+});
