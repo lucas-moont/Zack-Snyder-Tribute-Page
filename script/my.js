@@ -10,7 +10,9 @@ window.onload = function(){
 
 
 jQuery(document).ready(function($){
-    $('.button').on('click', function() {
-        $(".menuMobile").trigger('click');
-    });
+    if($(window).width() < 768){
+        $('.button').on('click', function() {
+            $(".menuMobile").trigger('click');
+        });
+    }
 });
