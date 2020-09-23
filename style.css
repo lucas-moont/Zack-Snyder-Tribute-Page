@@ -172,6 +172,10 @@ section {
     color: #A6A6A6;
 }
 
+#gallery {
+    margin-bottom: 20px;
+}
+
 #gallery .container {
     display: block;
     margin-right: 15px;
@@ -214,6 +218,7 @@ footer {
 }
 
 footer .container {
+    margin-top: 14px;
     display: flex;
     align-items: center;
     color: 	#9c9c9c;
