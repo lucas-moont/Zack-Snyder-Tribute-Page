@@ -16,15 +16,13 @@ jQuery(document).ready(function($){
             $(".menuMobile").trigger('click');
         });
     }
-    
+
     //Verifica se o usuário rola a tela do celular e conserta o display do menu.
     window.addEventListener("orientationchange", function(){
         if($(window).width() <= 584 && ul.style.display == 'none'){
             ul.style.display = "Flex";
-            console.log('Foi')
         }else if($(window).width() >= 584 && ul.style.display == 'flex'){
             ul.style.display = 'none'
-            console.log('Foi de novo.')
         }
     })
 });
