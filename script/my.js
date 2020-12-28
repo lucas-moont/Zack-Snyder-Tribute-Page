@@ -9,9 +9,22 @@ window.onload = function(){
 }
 
 jQuery(document).ready(function($){
+    var ul = document.getElementById("ul")
+
     if($(window).width() < 584){
         $('.button').on('click', function() {
             $(".menuMobile").trigger('click');
         });
     }
+    
+    //Verifica se o usuário rola a tela do celular e conserta o display do menu.
+    window.addEventListener("orientationchange", function(){
+        if($(window).width() <= 584 && ul.style.display == 'none'){
+            ul.style.display = "Flex";
+            console.log('Foi')
+        }else if($(window).width() >= 584 && ul.style.display == 'flex'){
+            ul.style.display = 'none'
+            console.log('Foi de novo.')
+        }
+    })
 });
